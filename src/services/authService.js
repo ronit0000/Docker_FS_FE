@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Use full public DNS with http:// prefix
-const API_URL = "http://ec2-54-236-7-30.compute-1.amazonaws.com:8081/auth";
+const API_URL = "http://54.236.7.30:8081/auth";
 
 export const login = async (username, password) => {
   const response = await axios.post(`${API_URL}/login`, { username, password });
