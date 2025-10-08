@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://98.81.59.102:8081/api/products"; // Backend API URL
-const IMAGE_BASE_URL = "http://98.81.59.102:8081/api/products/images"; // Use same host
+const API_BASE_URL = "http://ec2-54-242-240-239.compute-1.amazonaws.com:8081/api/products"; // Backend API URL
+const IMAGE_BASE_URL = "http://ec2-54-242-240-239.compute-1.amazonaws.com:8081/api/products/images"; // Use same host
 
 // Fetch products by category (computers, mobiles, laptops, pendrives, or all)
 export const getProducts = async (category = "") => {
