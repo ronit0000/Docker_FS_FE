@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Use the public DNS consistently for both
-const API_BASE = "http://98.81.59.102:8081/api/cart";
+const API_BASE = "http://ec2-54-242-240-239.compute-1.amazonaws.com:8081/api/cart";
 const API_URL = API_BASE; // Keep a single source of truth
 
 export const addToCart = async (userId, productId) => {
